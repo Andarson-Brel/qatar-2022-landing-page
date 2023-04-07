@@ -1,0 +1,473 @@
+html {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: graphicArabic;
+  src: url(fonts/Graphik-Arabic.ttf);
+  font-weight: lighter;
+  /* font-family: qatar2022;
+  src: url(fonts/Qatar2022-Medium.otf);
+  font-family: qatar2022Arabic;
+  src: url(fonts/Qatar2022Arabic-Medium.otf); */
+}
+@font-face {
+  font-family: qatar2022;
+  src: url(fonts/Qatar2022-Medium.otf);
+  /* font-family: qatar2022Arabic;
+  src: url(fonts/Qatar2022Arabic-Medium.otf); */
+}
+@font-face {
+  /* font-family: qatar2022;
+  src: url(fonts/Qatar2022-Medium.otf); */
+  font-family: qatar2022Arabic;
+  src: url(fonts/Qatar2022Arabic-Medium.otf);
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+.menu {
+  display: none;
+}
+.ninety-percent {
+  width: 90%;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-align-center {
+  text-align: center;
+}
+body {
+  margin: 0;
+}
+/* ////////////////////////////////////////////////////////////// */
+/* HEADER SECTION */
+.logo-img {
+  width: 80px;
+}
+.navbar {
+  padding: 0.5% 5%;
+  width: 100%;
+  margin: 0;
+  background: rgba(228, 33, 87, 0.1);
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  position: fixed;
+}
+
+.nav-link {
+  display: inline-block;
+  list-style: none;
+}
+.nav-link + .nav-link {
+  margin-left: 1em;
+}
+.nav-link a {
+  text-decoration: none;
+  font-family: "Mulish", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+}
+
+/* END OF HEADER SECTION */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+.hero {
+  padding-top: 8em;
+  background: url("images/ball-net.png"), url("images/bg-img.svg");
+  /* text-align: center; */
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom -160px left 55%, center bottom;
+  background-size: 40%, cover;
+  /* background: black; */
+}
+
+.qatar-logo {
+  width: 100px;
+}
+.world-cup {
+  font-family: graphicArabic;
+  /* font-size: 2rem; */
+  /* font-weight: bold; */
+  color: white;
+  letter-spacing: 5px;
+  margin-top: 1em;
+}
+.qatar-2022 {
+  width: 300px;
+  padding-top: 1em;
+}
+.second-section {
+  width: 70%;
+  padding: 60px 70px;
+}
+.countdown-desc {
+  color: #821333;
+  /* width: 40%; */
+}
+.line {
+  height: 100%;
+  width: 1px;
+  background-color: #dfa751;
+  border-radius: 2px;
+}
+.countdown-timer {
+  padding: 20px 40px;
+  width: 50%;
+  height: 70px;
+  border-radius: 20px;
+  background-color: #cc1447;
+  box-shadow: 5px 5px 21px -13px rgba(204, 20, 71, 0.49);
+  -webkit-box-shadow: 5px 5px 21px -13px rgba(204, 20, 71, 0.49);
+  -moz-box-shadow: 5px 5px 21px -13px rgba(204, 20, 71, 0.49);
+}
+.countdown-timer h2 {
+  font-family: qatar2022;
+  color: white;
+  letter-spacing: 2px;
+}
+.countdown-timer p {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.horizontal-line {
+  width: 82%;
+  height: 1px;
+  background-color: #cc1447;
+}
+.explore-card {
+  font-family: "Quicksand", sans-serif;
+  width: 250px;
+  border-radius: 10px;
+  border-left: 1px solid #b31541;
+  border-right: 1px solid #b31541;
+  border-bottom: 1px solid #b31541;
+  margin: 2.5em 0;
+}
+.explore-card-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.explore-card-img img {
+  /* height: 100%; */
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.description {
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  font-size: 12px;
+  padding: 10px;
+}
+.description p {
+  color: #131415;
+}
+.heading {
+  color: #b31541;
+}
+.fourth-section {
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  background: linear-gradient(
+      90deg,
+      rgba(187, 7, 104, 0.9108018207282913) 29%,
+      rgba(255, 134, 199, 0.35057773109243695) 93%
+    ),
+    url(images/bg2-img.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  padding: 4em;
+}
+.shortline {
+  width: 20%;
+  height: 4px;
+  margin: 20px 0;
+  border-radius: 10px;
+  background-color: white;
+}
+.container-description {
+  font-family: qatar2022Arabic;
+  width: 28%;
+  font-size: 1.6rem;
+  color: white;
+  position: absolute;
+  top: 45%;
+}
+.container {
+  position: relative;
+}
+.navigation {
+  width: 100px;
+  position: absolute;
+  left: 55%;
+  transform: -50%;
+  translate: -50%;
+  bottom: 50px;
+}
+.navigation img {
+  cursor: pointer;
+}
+.fifth-section {
+  background-color: #fbf3f5;
+  padding: 6em 0;
+}
+.team-card-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  width: 60%;
+  border: 1px solid #b31541;
+  background-color: #fbf3f5;
+  border-radius: 10px;
+  margin: auto;
+  padding: 3em;
+  font-family: "Quicksand", sans-serif;
+}
+.team {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: -50%;
+  translate: -50%;
+  width: 15%;
+  height: 30px;
+  background-color: #fbf3f5;
+  font-family: qatar2022;
+  font-size: 1.6rem;
+}
+.group-card {
+  width: 22%;
+  margin: 10px 0;
+  border: 0.5px solid #b31541;
+  border-radius: 10px;
+}
+.group-title {
+  padding: 0.4em;
+  width: 100%;
+  height: 30px;
+  color: white;
+  background-color: #b31541;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 1em;
+}
+.club {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 0.6em;
+}
+.club-name {
+  font-weight: bold;
+}
+footer {
+  background-color: #b31541;
+  padding: 2em 0;
+}
+.footer-container {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+  margin: 0 auto;
+}
+.col2 {
+  width: 80%;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-nav li {
+  display: inline-block;
+  list-style: none;
+
+  cursor: pointer;
+}
+.footer-nav li a {
+  color: white;
+  text-decoration: none;
+}
+.footer-socials img {
+  margin-left: 20px;
+}
+.footer-line {
+  margin: 5px 0;
+  width: 100%;
+  height: 1px;
+  border-radius: 50px;
+  background-color: white;
+}
+.copyrightsesion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  color: #dfa751;
+}
+@media (max-width: 1250px) {
+  html {
+    font-size: 14px;
+  }
+  /* .group-card {
+    font-size: 12px;
+  } */
+  .navigation {
+    width: 10%;
+    margin: 0 auto;
+  }
+  .navigation img {
+    width: 10%;
+  }
+}
+@media (max-width: 600px) {
+  .d-flex {
+    display: block;
+  }
+  .second-section {
+    padding: 20px;
+    width: 100%;
+  }
+  .col2 {
+    width: 80%;
+  }
+  .countdown-timer {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+  }
+  .countdown-desc {
+    width: 100%;
+  }
+  .star {
+    display: none;
+  }
+  .team-card-container {
+    display: block;
+    width: 80%;
+  }
+  .nav-ul {
+    display: none;
+  }
+  .qatar-2022 {
+    width: 50%;
+  }
+  /* html {
+    font-size: 10px;
+  } */
+  .horizontal-line {
+    width: 40%;
+    flex-grow: 1;
+  }
+  .explore-col h1 {
+    flex-grow: 1;
+    width: 180px;
+  }
+  .explore-col {
+    display: flex;
+  }
+  .description p,
+  .description h3 {
+    font-size: 16px;
+  }
+  .group-card {
+    margin: 10px auto;
+  }
+  .container {
+    position: relative;
+  }
+  .container-description {
+    position: absolute;
+    top: 45%;
+    width: 70%;
+  }
+  /* .shortline {
+    position: absolute;
+    top: 380px;
+  } */
+  .group-card {
+    /* font-size: 12px; */
+    display: block;
+    width: 90%;
+  }
+  .navigation {
+    width: 100px;
+    position: absolute;
+    left: 55%;
+    transform: -50%;
+    translate: -50%;
+    bottom: 50px;
+  }
+
+  .explore-card {
+    margin: 10px auto;
+  }
+  /* .footer-socials img {
+    width: 10px;
+  } */
+  .hero {
+    padding-top: 8em;
+    background: url("images/ball-net.png"), url("images/bg-img.svg");
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom -50px left 55%, center bottom;
+    background-size: 40%, cover;
+    /* background: black; */
+  }
+  .footer-container {
+    width: 96%;
+  }
+  .footer-logo {
+    width: 60px;
+  }
+  .footer-socials img {
+    margin-left: 5px;
+  }
+  .footer-container {
+    box-sizing: border-box;
+  }
+  .team {
+    top: -9px;
+  }
+  .navbar {
+    display: flex;
+  }
+  .menu {
+    display: flex;
+    width: 50px;
+    cursor: pointer;
+  }
+}
